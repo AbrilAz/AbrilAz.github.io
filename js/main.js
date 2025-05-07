@@ -23,4 +23,10 @@ $(document).ready(function () {
     );
   
   });
+
+  // Mostrar el carrusel de referencias con animación al cargar
+$(document).ready(function () {
+  $('#recomendaciones').fadeIn(800);
+});
+
   
