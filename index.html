@@ -2,349 +2,210 @@
 <html lang="es">
 
 <head>
-    <!-- Metadatos -->
-    <meta charset="UTF-8">
-    <meta name="author" content="AbrilAz">
-    <meta name="description" content="Mi proyecto HTML: Perfil Onlinne">
-    <meta name="keywords" content="C,C++,Ensamblador,HTML,Teoria de Automatas,Diseño Web,
-    Informatica,Tecnologias,Codigos en c,CSS, JS, Bootstrap">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Title -->
-    <title>MI PORTAFOLIO</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="./images/logo.png">
-    <!-- Bootstrap CSS offline -->
-    <!--<link href="./css/bootstrap.min.css" rel="stylesheet">-->
-    <!-- Bootstrap Icons offline -->
-    <!--<link href="./icons/bootstrap-icons.css" rel="stylesheet">-->
-    <!-- Bootstrap CSS online -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <!-- Bootstrap Icons online -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <!-- My CSS -->
-    <link href="./css/style.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="author" content="AbrilAz" />
+  <meta name="description" content="Mi proyecto HTML: Perfil Online" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- HTML Meta Tags -->
-    <meta name="description" content="Poseo repositorios de contenido tecnológico, con ejemplos tanto lógicos como prácticos de mi actual conocimiento en el área
-">
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://github.com/AbrilAz">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="MI PORTAFOLIO">
-    <meta property="og:description" content="Poseo repositorios de contenido tecnológico, con ejemplos tanto lógicos como prácticos de mi actual conocimiento en el área
-">
-    <meta property="og:image"
-        content="https://opengraph.b-cdn.net/production/images/c800abc8-bb8f-44c8-b948-84a31d5f0094.png?token=qecsg7bQvqT1xt2SRy_i4EbUkl8BS-umMuCmE6D5-2c&height=224&width=224&expires=33269338724">
+  <title>MI PORTAFOLIO</title>
+  <link rel="icon" href="./images/logo.png" type="image/x-icon" />
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="github.com">
-    <meta property="twitter:url" content="https://github.com/AbrilAz">
-    <meta name="twitter:title" content="MI PORTAFOLIO">
-    <meta name="twitter:description" content="Poseo repositorios de contenido tecnológico, con ejemplos tanto lógicos como prácticos de mi actual conocimiento en el área
-">
-    <meta name="twitter:image"
-        content="https://opengraph.b-cdn.net/production/images/c800abc8-bb8f-44c8-b948-84a31d5f0094.png?token=qecsg7bQvqT1xt2SRy_i4EbUkl8BS-umMuCmE6D5-2c&height=224&width=224&expires=33269338724">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
 
-    <style>
-        .nav-link,
-        .seccion-E,
-        .icons-project,
-        .seccion-descripcion {
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.2rem;
-            line-height: 1.5;
-        }
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-        .seccion-texto,
-        .seccion-titulo {
-            font-family: "Courier New", monospace;
-        }
-    </style>
-
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <a class="navbar-brand" href="#"><img src="./images/logo.png" width="50" alt="Logo" /></a>
+        <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item"><a class="nav-link active" href="#aboutme">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#references">Referencias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contactme">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-                aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-toggler">
-                <a class="navbar-brand" href="#">
-                    <img src="./images/logo.png " width="50" alt="My logo">
-                </a>
-                <ul class="navbar-nav d-flex justify-content-center align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#aboutme" aria-current="page">Sobre mí <span
-                                class="visually-hidden">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Proyectos </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#references">Referencias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contactme">Contacto</a>
-                    </li>
-                </ul>
+  <!-- Sección "Me" -->
+  <section class="myclass align-items-stretch">
+    <div class="myclass-main d-flex flex-column justify-content-center align-items-center">
+      <!-- La imagen tiene una animación fadeIn definida en CSS y reforzada por jQuery -->
+      <img class="myclass-pic rounded-circle" src="./images/selfi.jpeg" alt="Selfie" />
+      <!-- Título con animación de entrada -->
+      <h1>Hola, Yo soy AbrilAz</h1>
+      <h2>Somos procesos</h2>
+    </div>
+    <div class="myclass-label">
+      <img class="myclass-imagen img-fluid" src="./images/imagenSobreMi.jpg" alt="think twice code once" />
+    </div>
+  </section>
+
+  <!-- About me -->
+  <section id="aboutme" class="about-me section-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Conoce más sobre mí, AbrilAz</h2>
+      <p class="seccion-texto">
+        Soy una joven apasionada por la informática, en constante aprendizaje y superación. Me motiva el desarrollo de habilidades técnicas y la posibilidad de transformar ideas en proyectos reales.
+      </p>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section class="experiencia section-clara">
+    <div class="container text-center">
+      <div class="row">
+        <!-- Programación -->
+        <div class="col-12 col-md-4">
+          <p class="columna experiencia-Programacion">Programación</p>
+          <i class="bi-braces" data-bs-toggle="tooltip" title="Lenguajes que domino"></i>
+          <p class="seccion-E">Resolver problemas con creatividad</p>
+          <div class="badge-contenedor">
+            <span class="badge bg-primary">C</span>
+            <span class="badge bg-primary">C++</span>
+            <span class="badge bg-primary">Java</span>
+            <span class="badge bg-primary">Ensamblador</span>
+          </div>
+        </div>
+
+        <!-- Administración -->
+        <div class="col-12 col-md-4">
+          <p class="columna experiencia-Administracion">Administración</p>
+          <i class="bi-person-gear" data-bs-toggle="tooltip" title="Gestión de proyectos"></i>
+          <p class="seccion-E">Transformar oportunidades en resultados</p>
+          <div class="badge-contenedor">
+            <span class="badge bg-primary">Scrum</span>
+            <span class="badge bg-primary">Finanzas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="projects" class="proyectos section-clara d-flex flex-column">
+    <h2 class="seccion-titulo">Mis Proyectos</h2>
+    <h3 class="seccion-descripcion">El reflejo de mi crecimiento tecnológico</h3>
+    <div class="container text-center proyectos-contenedor">
+      <div class="row">
+        <!-- Proyecto 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="./images/automatas.png" alt="Proyecto Autómatas" />
+            <div class="overlay">
+              <p>Teoría de la Computación</p>
+              <div class="icons-project">
+                <a href="https://github.com/AbrilAz/Teoria_de_Automatas" target="_blank">Repositorio</a>
+                <i class="bi-github" data-bs-toggle="tooltip" title="Ver en GitHub"></i>
+              </div>
             </div>
+          </div>
         </div>
-    </nav>
-    <style>
-        /* Cursor del cuerpo */
-        body {
-            cursor: url("./images/cursorBody.png"), default !important;
-        }
 
-        /* Cursor de enlaces */
-        a {
-            cursor: url("./images/Enlaces.png"), auto !important;
-        }
-
-        /* Cursor de botones */
-        button {
-            cursor: url("./images/cursoBoton.png"), auto !important;
-
-        }
-    </style>
-    <!-- Me -->
-    <section class="myclass align-items-stretch">
-        <div class="myclass-main d-flex flex-column justify-content-center aling-items-center">
-            <img class="myclass-pic rounded-circle" src="./images/selfi.jpeg" alt="My selfie">
-            <h1>Hola, Yo soy AbrilAz</h1>
-            <h2>Somos procesos</h2>
-        </div>
-        <div class="myclass-label">
-            <img class="myclass-imagen img-fluid" src="./images/imagenSobreMi.jpg" alt="think twice code once">
-        </div>
-    </section>
-
-    <!-- About me -->
-    <section id="aboutme" class="about-me section-oscura">
-        <div class="contenedor">
-            <h2 class="seccion-titulo">Conoce más sobre mi, AbrilAz </h2>
-            <p class="seccion-texto">
-                Soy una joven apasionada por el mundo de la informática, en constante aprendizaje y superación.
-                Actualmente estoy aprendiendo HTML, Bootstrap y CSS. Mi objetivo es crear soluciones innovadoras a
-                través de la tecnología y compartir mi conocimiento para inspirar a otras personas. Me motiva el
-                pensamiento lógico, el desarrollo de habilidades técnicas y la posibilidad de transformar ideas en
-                proyectos tangibles. Creo que la tecnología es una herramienta poderosa para cambiar el mundo y quiero
-                ser parte de ese cambio. </p>
-        </div>
-    </section>
-
-    <!-- Experiencia -->
-    <section class="experiencia section-clara">
-        <div class="container text-center">
-            <div class="row">
-                <!-- Programación -->
-                <div class="experiencia-columna col-12 col-md-4">
-                    <p class="columna experiencia-Programacion">Programación</p>
-                    <i class="bi-braces"></i>
-                    <p class="seccion-E">
-                        La programación no es solo escribir código, si no resolver problemas con creatividad
-                    </p>
-                    <div class="badge-contenedor">
-                        <span class="badge bg-primary">C</span>
-                        <span class="badge bg-primary">C++</span>
-                        <span class="badge bg-primary">Java</span>
-                        <span class="badge bg-primary">Ensamblador</span>
-                    </div>
-                </div>
-
-                <!-- Administración -->
-                <div class="experiencia-columna col-12 col-md-4">
-                    <p class="columna experiencia-Administracion">Administración</p>
-                    <i class="bi-person-gear"></i>
-                    <p class="seccion-E">
-                        La administración eficaz no solo se trata de gestionar recursos, sino de transformar
-                        oportunidades en resultados </p>
-                    <div class="badge-contenedor">
-                        <span class="badge bg-primary">Scrum</span>
-                        <span class="badge bg-primary">Finanzas</span>
-                    </div>
-                </div>
+        <!-- Proyecto 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="./images/razonamiento.png" alt="Lógica Matemática" />
+            <div class="overlay">
+              <p>Lógica Matemática</p>
+              <div class="icons-project">
+                <a href="https://github.com/AbrilAz/LogicaMatematica" target="_blank">Repositorio</a>
+                <i class="bi-github" data-bs-toggle="tooltip" title="Ver en GitHub"></i>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Projects -->
-    <section id="projects" class="proyectos section-clara d-flex flex-column">
-        <h2 class="seccion-titulo">Mis Proyectos</h2>
-        <h3 class="seccion-descripcion">El reflejo de mi continuo crecimiento tecnológico </h3>
-        <!-- gallery -->
-        <div class="container text-center proyectos-contenedor">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src="./images/automatas.png" alt="Proyecto Teoria de Automatas">
-                        <div class="overlay">
-                            <p>Teoría de la computación </p>
-                            <div class="icons-project">
-                                <a href="https://github.com/AbrilAz/Teoria_de_Automatas" target="_blank"
-                                    rel="noopener noreferrer">Repositorio de Teoría de Autómatas</a>
-                                <i class="bi-github"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src="./images/razonamiento.png" alt="Proyecto Logica Matematica">
-                        <div class="overlay">
-                            <p>Lógica Matemática en la resolución de problemas</p>
-                            <div class="icons-project">
-                                <a href="https://github.com/AbrilAz/LogicaMatematica" target="_blank"
-                                    rel="noopener noreferrer">Repositorio de la Lógica Matemática</a>
-                                <i class="bi-github"></i>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="proyecto">
-                        <img src="./images/BD.jpg" alt="Proyecto Bases de datos">
-                        <div class="overlay">
-                            <p>Datos básicos en el respaldo de una BD</p>
-                            <div class="icons-project">
-                                <a href="https://github.com/AbrilAz/BasesDatos" target="_blank"
-                                    rel="noopener noreferrer">Repositorio de la Lógica Matemática</a>
-                                <i class="bi-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <!-- Proyecto 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="./images/BD.jpg" alt="Bases de datos" />
+            <div class="overlay">
+              <p>Base de Datos</p>
+              <div class="icons-project">
+                <a href="https://github.com/AbrilAz/BasesDatos" target="_blank">Repositorio</a>
+                <i class="bi-github" data-bs-toggle="tooltip" title="Ver en GitHub"></i>
+              </div>
             </div>
+          </div>
         </div>
-        <a href="" target="_blank" rel="noopener noreferrer"></a>
-        <button type="button" class="btn btn-info">Más proyectos
-            <i class="bi-arrow-right-circle"></i>
-        </button>
+      </div>
+    </div>
+
+    <!-- Botón con efecto hover (definido en CSS) -->
+    <button type="button" class="btn btn-info mt-3" data-bs-toggle="tooltip" title="Ver más proyectos">
+      Más proyectos <i class="bi-arrow-right-circle"></i>
+    </button>
+  </section>
+
+  <!-- Tips -->
+  <section class="tips justify-content-start">
+    <h2 class="seccion-titulo">Tips</h2>
+    <div class="card shadow border-info">
+      <div class="card-header">Material de apoyo</div>
+      <ul class="list-group list-group-flush">
+        <a href="https://www.youtube.com/watch?v=1-qjMS6C960" target="_blank">
+          <li class="list-group-item">Aprende C en 45 minutos</li>
         </a>
-    </section>
-
-    <!-- Tips -->
-    <section class="tips justify-content-start">
-        <h2 class="seccion-titulo">Tips</h2>
-        <div class="card">
-            <div class="card-header">
-                Material de apoyo sobre programación
-            </div>
-            <ul class="list-group list-group-flush">
-                </a>
-                <a href="https://www.youtube.com/watch?v=1-qjMS6C960" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Aprende C en 45 minutos (curso desde cero) 💻</li>
-                </a>
-                <a href="https://www.youtube.com/watch?v=axHut2e84fc" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">Aprende C# en 15 minutos 🟣</li>
-                </a>
-                <a href="https://www.youtube.com/watch?v=wyhPQ2t_MOI" target="_blank" rel="noopener noreferrer">
-                    <li class="list-group-item">APRENDE la lógica de la programación en JAVA desde CERO - 2024 | Curso
-                        para principantes</li>
-                </a>
-            </ul>
-        </div>
-        <a href="" target="_blank" rel="noopener noreferrer">
-            <button type="button" class="btn btn-info">Más tips
-                <i class="bi-arrow-right-circle"></i>
-            </button>
+        <a href="https://www.youtube.com/watch?v=axHut2e84fc" target="_blank">
+          <li class="list-group-item">Curso de C# en 15 minutos</li>
         </a>
-    </section>
+      </ul>
+    </div>
+    <button type="button" class="btn btn-info mt-2" data-bs-toggle="tooltip" title="Más recursos en desarrollo">
+      Más tips <i class="bi-arrow-right-circle"></i>
+    </button>
+  </section>
 
-    <!-- References -->
-    <section id="references" class="recomendaciones section-clara">
-        <h2 class="seccion-titulo">Recomendaciones</h2>
-        <h3 class="seccion-descripcion">Amigos, colegas, aliados en el camino tecnólogico</h3>
-        <div id="recomendaciones" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#recomendaciones" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="container">
-                        <img src="./images/squirrel.png" class="recomendacion-imagen rounded-circle" alt="...">
-                        <p class="recomendacion-texto"> El camino hacia la autosuficiencia es la tecnología</p>
-                        <div class="recomendacion-info">
-                            <p class="amigo">Heribertou</p>
-                            <p class="cargo">Compañero programador</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#recomendaciones"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#recomendaciones"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contactme" class="contact section-oscura">
-        <div class="container">
-            <div class="container text-center rectangulo d-flex justify-content-evenly">
-                <div class="row">
-                    <div class="col-12 col-md-4 seccion-titulo">
-                        Comunicate conmigo
-                    </div>
-                    <div class="col-12 col-md-4 description">
-                        Comprometida con aprender y mejorar mis habilidades tecnologicas me encantaría ser parte de su
-                        equipo
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <a href="mailto:">
-                            <button type="button">
-                                a85020758@gmail.com
-                                <i class="bi-envelope-check"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="section-oscura d-flex flex-column aling-items-center justify-content-center">
-        <img class="footer-icon" src="./images/logo.png" alt="Logo profile">
-        <p class="footer-text text-center">
-            "La mejora continua es la clave para transformar <br> procesos en resultados extraordinarios"
-        </p>
-        <div class="icons-sn d-flex flex-wrap aling-items-center justify-content-center">
-            <a href="https://github.com/AbrilAz" target="_blank" rel="noopener noreferrer">
-                <i class="bi-github"></i>
+  <!-- Contacto -->
+  <section id="contactme" class="contact section-oscura">
+    <div class="container">
+      <div class="container text-center rectangulo d-flex justify-content-evenly">
+        <div class="row">
+          <div class="col-12 col-md-4 seccion-titulo">Comunícate conmigo</div>
+          <div class="col-12 col-md-4 description">Motivada a aprender y colaborar</div>
+          <div class="col-12 col-md-4">
+            <a href="mailto:a85020758@gmail.com">
+              <button type="button">
+                a85020758@gmail.com <i class="bi-envelope-check"></i>
+              </button>
             </a>
+          </div>
         </div>
-        <div class="author"> Derechos reservados AbrilAz (2024) &#169; </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <!-- Bootstrap JS offline -->
-    <!--script src="./js/bootstrap.min.js"></script-->
-    <!-- Bootstrap JS online -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
-    <!-- My JS -->
-    <script src="./js/main.js"></script>
+  <!-- Footer -->
+  <footer class="section-oscura d-flex flex-column align-items-center justify-content-center">
+    <img class="footer-icon" src="./images/logo.png" alt="Logo profile" />
+    <p class="footer-text text-center">"La mejora continua es la clave del éxito"</p>
+    <div class="icons-sn d-flex flex-wrap align-items-center justify-content-center">
+      <a href="https://github.com/AbrilAz" target="_blank" data-bs-toggle="tooltip" title="Ver mi GitHub">
+        <i class="bi-github"></i>
+      </a>
+    </div>
+    <div class="author">Derechos reservados AbrilAz (2024) &#169;</div>
+  </footer>
+
+  <!-- Bootstrap y scripts personalizados -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>
